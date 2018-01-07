@@ -12,3 +12,4 @@
 ### [Tổng quan DAS NAS ISCSI SAN](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)
 
 ## Ceph
+### [Tổng quan về Ceph](https://github.com/lacoski/khoa-luan/blob/master/Ceph/tong%20quan%20ceph.md)

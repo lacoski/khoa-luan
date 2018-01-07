@@ -13,6 +13,8 @@
 
 ### [2.3 Bộ nhớ flash](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/bo-nho-flash.md)
 ### [2.4 Tổng quan DAS NAS ISCSI SAN](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)
+### [2.5 Chuẩn kết nổi ổ đĩa ](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)
+
 
 ## [3. Raid](https://github.com/lacoski/khoa-luan/tree/master/RAID)
 ### [3.1 Tổng quan Raid 0 1 5](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)

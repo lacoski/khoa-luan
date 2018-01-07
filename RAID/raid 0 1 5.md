@@ -24,7 +24,7 @@ Về phân loại thì có khả nhiều loại Raid được sử dụng như R
 
 **1. RAID 0:**
 
-<div style="text-align:center"> <img src="/PIC/Raid 0.png"></div>
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/Raid%200.png"></div>
 
 Raid 0 là loại Raid khá phổ biến và được nhiều người sử dụng hiện nay do có khả năng nâng cao hiệu suất tốc độc đọc ghi trao đổi dữ liệu của ổ cứng. Để tiến hành setup Raid 0 thì server cần tối thiểu 2 ổ đĩa (Disk 0, Disk 1).
 
@@ -41,7 +41,7 @@ Nhược điểm:
 
 **      2. RAID 1:**
 
-pic 1
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/Raid%201.png"></div>
 
 Raid 1 là loại Raid cơ bản được sử dụng khá nhiều hiện nay do khả năng đạt an toàn về dữ liệu. để tiến hành setup Raid 1 thì cũng giống như Raid 0, server cần tối thiểu 2 ổ cứng để lưu trữ.
 

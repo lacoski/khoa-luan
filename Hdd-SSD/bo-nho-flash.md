@@ -1,6 +1,6 @@
 
 
-Bộ nhớ flash
+** Bộ nhớ flash **
 
 Bộ nhớ flash là một loại bộ nhớ máy tính kiểu bộ nhớ điện tĩnh (non-volative memory), có thể bị xóa khi mất nguồn điện cấp vào và lập trình lại (reprogrammed).
 

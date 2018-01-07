@@ -39,7 +39,7 @@ Nhược điểm:
 Đối tượng sử dụng:
  - hích hợp với những dịch vụ cần lưu trữ và truy xuất với tốc độ cao. Chẳng hạn như dịch vụ video streaming, chạy cơ sở dữ liệu... (đối với hình thức lưu trữ này Vinahost khuyến cáo khách hàng nên có hình thức sao lưu backup của mình.)
 
-**      2. RAID 1:**
+**2. RAID 1:**
 
 <div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/Raid%201.png"></div>
 
@@ -58,7 +58,7 @@ Nhược điểm:
 
 **   3. RAID 10:**
 
-<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/raid10.png"></div>
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/raid10.png"></div>
 
 Raid 10 là sự kết hợp giữa 2 loại raid phổ biến và Raid 1 và Raid 0. Để setup Raid 10 khách hàng cần sử dụng tối thiểu 4 ổ cứng (Disk 0, Disk 1, Disk 2, Disk 3).
 
@@ -73,7 +73,7 @@ Nhược điểm:
 Đối tượng sử dụng:
 - Raid 10 thích hợp với tất cả các đối tượng sử dụng (từ những yêu cầu về hiệu suất đến việc đảm bảo an toàn dữ liệu). Về ổ cứng yêu cầu phải 4 ổ cùng dung lượng, nếu 4 ổ khác dung lượng thì lấy ổ thấp nhất.
 
-**    4. RAID 5:**
+**4. RAID 5:**
 
 <div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/RAID/PIC/r5.png"></div>
 
@@ -90,7 +90,7 @@ Nhược điểm:
 Đối tượng sử dụng:
 - Tất cả những website, dịch vụ, ứng dụng có số lượng truy cập và yêu cầu tài nguyên từ nhỏ đến vừa và lớn.
 
-**    5. JBOD**
+**5. JBOD**
 
 
 JBOD (Just a Bunch Of Disks) thực tế không phải là một dạng RAID chính thống, nhưng lại có một số đặc điểm liên quan tới RAID và được đa số các thiết bị điều khiển RAID hỗ trợ. JBOD cho phép bạn gắn bao nhiêu ổ đĩa tùy thích vào bộ điều khiển RAID của mình (dĩ nhiên là trong giới hạn cổng cho phép). Sau đó chúng sẽ được &quot;tổng hợp&quot; lại thành một đĩa cứng lớn hơn cho hệ thống sử dụng. Ví dụ bạn cắm vào đó các ổ 10GB, 20GB, 30GB thì thông qua bộ điều khiển RAID có hỗ trợ JBOD, máy tính sẽ nhận ra một ổ đĩa 60GB. Tuy nhiên, lưu ý là JBOD không hề đem lại bất cứ một giá trị phụ trội nào khác: không cải thiện về hiệu năng, không mang lại giải pháp an toàn dữ liệu, chỉ là kết nối và tổng hợp dung lượng mà thôi.

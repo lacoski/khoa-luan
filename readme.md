@@ -9,6 +9,7 @@
 ### 2.1 Tổng quan về Hdd (Đang cập nhật)
 ### [2.2 Tổng quan về Sdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ssd.md)
 #### [2.2.1 Ram tĩnh và động](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/Ph%C3%A2n%20lo%E1%BA%A1i%20Ram%20t%C4%A9nh.md)
+#### [2.2.2 Phân loại ssd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ph%C3%A2n%20lo%E1%BA%A1i%20ssd.md)
 
 ### [2.3 Bộ nhớ flash](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/bo-nho-flash.md)
 ### [2.4 Tổng quan DAS NAS ISCSI SAN](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)

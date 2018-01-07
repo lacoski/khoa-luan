@@ -13,6 +13,6 @@
 
 ## [Raid](https://github.com/lacoski/khoa-luan/tree/master/RAID)
 ### [Tổng quan Raid 0 1 5](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)
-### [Phân loại Raid cứng và mềm]()
+### [Phân loại Raid cứng và mềm](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%20cung%20mem.md)
 ## Ceph
 ### [Tổng quan về Ceph](https://github.com/lacoski/khoa-luan/blob/master/Ceph/tong%20quan%20ceph.md)

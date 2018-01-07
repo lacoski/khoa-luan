@@ -16,7 +16,7 @@ Bộ nhớ flash là công nghệ chip nhớ phổ biến đang được sử d�
 
 Chúng hoạt động dựa trên một loạt các bóng bán dẫn bên trong được gán giá trị &quot;mở&quot; và &quot;đóng&quot;. Các khối bộ nhớ này được bố trí theo kiểu hai chiều và được xếp cạnh nhau.
 
-pic 1
+<div style="text-align:center"> <img src=https://raw.githubusercontent.com/lacoski/khoa-luan/master/Hdd-SSD/PIC/flash.png></div>
 
 
 Khối bộ nhớ đơn cấp ( **SLC** ) với mỗi khối chỉ lưu được 1 bit, bù lại là cho phép thực thi ghi đọc với tốc độ nhanh hơn và cũng bền hơn. Trong khi khối bộ nhớ đa cấp ( **MLC** ) cho phép lưu nhiều bit hơn trên mỗi khối, có thể lên tới 3 bit trên mỗi khối bộ nhớ.
@@ -31,7 +31,7 @@ Bên cạnh đó còn giúp gia tăng khoảng trống giữa các khối bộ n
 
 Trên mỗi lớp bóng bán dẫn, các khối bộ nhớ cũng có thể sắp xếp theo dạng đơn cấp hoặc đa cấp như trên bộ nhờ flash, qua đó có thể tăng dung lượng lên mức cực khủng nếu muốn.
 
-pic 2
+<div style="text-align:center"> <img src=https://raw.githubusercontent.com/lacoski/khoa-luan/master/Hdd-SSD/PIC/kientruc-flash.png></div>
 
 Intel và Micron, 2 công ty tham gia vào nghiên cứu 3D NAND, hi vọng một ngày nào đó có thể sản xuất được bộ nhớ SSD kích thước như thanh kẹo cao su có thể lưu 3,5 TB dữ liệu hay bộ nhớ SSD 2,5 inch cho laptop có thể lưu tới 10 TB dữ liệu.
 

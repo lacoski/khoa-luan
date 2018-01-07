@@ -6,7 +6,7 @@
 ### [1.2 Hệ thống tập tin trong Linux](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/filesystem-in-linux.md)
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
-### 2.1 Tổng quan về Hdd (Đang cập nhật)
+### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)
 ### [2.2 Tổng quan về Sdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ssd.md)
 #### [2.2.1 Ram tĩnh và động](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/Ph%C3%A2n%20lo%E1%BA%A1i%20Ram%20t%C4%A9nh.md)
 #### [2.2.2 Phân loại ssd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ph%C3%A2n%20lo%E1%BA%A1i%20ssd.md)

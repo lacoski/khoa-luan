@@ -30,6 +30,7 @@ Theo thống kế, khối lượng dữ liệu lưu trữ tăng lên nhiều l�
 
 Ceph storage system là giải pháp nổi bật cho vấn đề tăng trưởng dữ liệu toàn cầu. Với các đặc điểm nổi bật như tính thống nhất, phân phối, chí phí đâu tư hợp lý, tiềm năng cho hiên tại và tương lai. Được tích hợp với kernel, đây là đặc điểm kiến Ceph vượt trội hơn các giải pháp storage hiện tại.
 
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Ceph/PIC/p1.png"></div>
 
 
 **Ceph – Giải pháp cloud storage**
@@ -72,6 +73,8 @@ Ceph giới thiệu giao thức mới RBD - Ceph Block Device. RBD cung cấp s�
 
 Ceph RBD hỗ trợ image size tới 16EB. Image có thể là disk vật lý, máy cảo, … Các công nghệ KVM, Zen hỗ trợ đầy đẩy RBD, tăng tốc máy ảo. Ceph block hỗ trợ đầy đủ nền tảng ảo hóa mới OpenStack, CloudStack,..
 
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Ceph/PIC/p2.png"></div>
+
 
 
 **Ceph filesystem**
@@ -82,6 +85,7 @@ Trong Ceph cluster, Ceph fs lib (libcephfs) chạy trên Rados library (librados
 
 Bên cạnh, Client có thể sử dụng phần mềm thứ 3 như Ganesha for NFS and Samba for SMB/CIFS. Phần mềm cho phép tương tác với &quot;libcephfs&quot;, bảo đảm lưu trữ user data phân tán trong Ceph storage cluster. CephFS có thể sử dụng cho Apache Hadoop File System (HDFS). Sử dụng libcephfs component to store data to the Ceph cluster. Để thực hiện, Ceph community cung cấp CephFS Java interface for Hadoop and Hadoop plugins. The libcephfs và librados components rất linh hoạt và ta có thể xây dựng phiên bản tùy chỉnh, tương tác với nó, xây dựng data bên dưới Ceph storage cluster.
 
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Ceph/PIC/p3.png"></div>
 
 
 **Ceph object storage**
@@ -103,3 +107,11 @@ data trên Ceph storage cluster. RADOS gateway interfaces gồm:
 + Admin API: This is also known as the management API or native API,which can be used directly in the application to gain access to the storage system for management purposes
 
 Để truy câp Ceph object storage system, ta có thể sử dụng RADOS gateway layer. librados software libraries cho phép user app truy tập trực tiếp đến Ceph = C, C++, Java, Python, and PHP. Ceph object storage has multisite capabilities, nó cung cấp giải pháp khi gặp sự cố. Các object storage configuration có thể thực hiện bởi Rados hoặc federated gateways.
+
+<div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Ceph/PIC/p4.png"></div>
+
+** Tổng kết **
+
+Ceph gần như dẫn dầu trong các công nghệ storage mới. Được thiết kế để vượt qua giới hạn mà storage gặp phải hiện nay. Là giải pháp mở, software-defined storage, tương thích nhiều phân cứng. Cung cấp nhiều giao diện với người dùng, tăng tính linh hoạt. Ceph mạnh mẹ hơn công nghệ Raid hiện tại, vượt qua các giới hạn của RAID.
+Mỗi thành phần trong Ceph đều bảo đảm và hỗ trợ HA. Điểm mạnh nhất của Ceph là tính thống nhất, cung cấp giải pháp toàn diện block, file, and object storage. Phù hợp lưu trữ cho cả small file và bigfile mà không có bất cứ trục trặc về hiệu suất.
+Ceph là hệ thống lưu trữ phân tán. Client có thể nhanh trong tiếp cận Ceph. Nó không tuần theo phương pháp truyền thống, ứng dụng kỹ thuật mới, cho phép client tinh toán động. Tăng tốc nâng cao hiệu năng cho client. Hơn thế, dữ liệu được lưu trong Ceph Cluster được tổ chức rõ ràng, tự động. Cả client và admin đều không phải lo lằng về sự cố, Ceph's intelligent system sẽ chịu trách nhiệm xứ lý. Ceph được thiết kế để tự quản trị, tự sửa lỗi. Khi xảy ra sự cố, Ceph vượt qua với sự đảm bảo tốt nhất. Ceph phát hiện và sửa lỗi tất cả sự cố trên disk, node, network, rack, data center row, data center, and even different geographies.

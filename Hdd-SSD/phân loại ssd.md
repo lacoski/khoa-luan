@@ -1,10 +1,10 @@
-** Thành phần quan trọng SSD **
+**Thành phần quan trọng SSD**
 
 Hai thành phần quan trọng nhất quyết định hiệu suất SSD là flash NAND và vi mạch điều khiển hay còn gọi controller.
 
 <div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Hdd-SSD/PIC/pl-ss-0.png"></div>
 
-** NAND SLC, MLC hay TLC **
+**NAND SLC, MLC hay TLC**
 
 <div style="text-align:center"> <img src="https://raw.githubusercontent.com/lacoski/khoa-luan/master/Hdd-SSD/PIC/pl-ss-1.png"></div>
 

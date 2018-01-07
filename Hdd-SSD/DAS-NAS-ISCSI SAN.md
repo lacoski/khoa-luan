@@ -39,7 +39,7 @@ _Lợi ích khi sử dụng SAN:_
 - Cho phép nhiều máy chủ cùng chia sẻ một thiết bị lưu trữ.
 - Cho phép thay đổi hay nâng cấp máy chủ một cách dễ dàng và dữ liệu không hề ảnh hưởng khi máy chủ bị lỗi.
 
-4. iSCSI SAN là gì?
+** 4. iSCSI SAN là gì? **
 
 iSCSI là Internet SCSI ( Small Computer System Interface ) là một chuẩn công nghiệp phát triển để cho phép truyền tải các lệnh SCSI qua mạng IP hiện có bằng cách sử dụng giao thức TCP/IP.
 

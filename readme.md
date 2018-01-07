@@ -7,8 +7,8 @@
 
 ## [Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### Tổng quan về Hdd (Đang cập nhật)
-### [Tổng quan về Sdd] (https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ssd.md)
-#### [Ram tĩnh và động] (https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/Ph%C3%A2n%20lo%E1%BA%A1i%20Ram%20t%C4%A9nh.md)
+### [Tổng quan về Sdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ssd.md)
+#### [Ram tĩnh và động](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/Ph%C3%A2n%20lo%E1%BA%A1i%20Ram%20t%C4%A9nh.md)
 
 ### [Bộ nhớ flash](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/bo-nho-flash.md)
 ### [Tổng quan DAS NAS ISCSI SAN](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)

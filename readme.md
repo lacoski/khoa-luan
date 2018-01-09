@@ -6,6 +6,8 @@
 ### [1.2 Hệ thống tập tin trong Linux](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/filesystem-in-linux.md)
 ### [1.3 Các loại filesystem trong Linux](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/type-file-system.md)
 ### [1.4 Cấu trúc file system ](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/filesystem-structure.md)
+### [1.5 FUSE ](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/type-file-system.md)
+
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)
 ### [2.2 Tổng quan về Sdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/ssd.md)

@@ -13,7 +13,9 @@ Khi một tiến trình phát sinh một lời gọi hệ thống hướng tập
 
 **Cấu trúc hệ thống tập tin ảo:**
 
-**- VFS** định nghĩa một bộ các chức năng mà mọi hệ thống tập tin phải thực thi. Giao diện này được tạo bởi một tập hợp các thao tác liên kết với ba kiểu của đối tượng: **hệ thống tập tin, i-node, và các tập tin mở.**
+**- VFS** định nghĩa một bộ các chức năng mà mọi hệ thống tập tin phải thực thi. Giao diện này được tạo bởi một tập hợp các thao tác liên kết với ba kiểu của đối tượng:
+
+**hệ thống tập tin, i-node, và các tập tin mở.**
 
 - VFS biết về các kiểu hệ thống tập tin được hỗ trợ trong nhân hệ điều hành. Nó sử dụng một bảng đã định nghĩa trong quá trình cấu hình nhân hệ điều hành. Mỗi mục từ trong bảng này mô tả một kiểu hệ thống tập tin: nó có chứa tên của kiểu hệ thống tập tin và một con trỏ trên một hàm đã gọi trong quá trình thao tác gắn vào (mount). Khi một hệ thống tập tin được gắn vào, hàm mount tương ứng được gọi. Chức năng này chịu trách nhiệm để đọc siêu khối (superblock) từ đĩa, khởi nạp các biến nội của nó, và trả về một bộ mô tả hệ thống tập tin được gắn vào cho VFS.
 

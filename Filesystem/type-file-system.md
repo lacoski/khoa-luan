@@ -1,11 +1,12 @@
-Các loại file system trong Linux
+# Các loại file system trong Linux
+___
+**File hệ thống Linux Ext – Extended file system:**
 
-File hệ thống Linux Ext – Extended file system:
-Giới thiệu:
+**Giới thiệu**
 - là định dạng file hệ thống đầu tiên được thiết kế dành riêng cho Linux.
 - Có tổng cộng 4 phiên bản và mỗi phiên bản lại có 1 tính năng nổi bật.
 
-Ext:
+**Ext:**
 - Phiên bản đầu tiên của Ext là phần nâng cấp từ file hệ thống Minix
 - Có thể xử lý các hệ thống file có kích thước 2 Gigabyte (GB)
 - Không đáp ứng được nhiều tính năng phổ biến ngày nay. Tồn tại nhiều hạn chế

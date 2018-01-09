@@ -17,6 +17,7 @@ ___
 - Phiển bản thương mai đâu tiên của linux.
 - Ext2 thực chất không phải là file hệ thống journaling, sự lựa chọn cho usb, sdcard do tính năng đọc ghi ít (do không sử dụng journal).
 - Hỗ trợ dung lượng ổ cứng lên tới 2 TB.
+- Ext2fs hỗ trợ tên tập tin dài. Chiều dài tên tập tin tối đa là 255 ký tự. Giới hạn này có thể được mở rộng lên tới 1012 nếu cần.
 
 **Ext3**
 - Phiên bản Ext2 đi kèm với journaling.

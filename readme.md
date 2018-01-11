@@ -23,6 +23,11 @@
 ### [3.1 Tổng quan Raid 0 1 5](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)
 ### [3.2 Phân loại Raid cứng và mềm](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%20cung%20mem.md)
 ## 4. Partition table
-###
+### [4.1 Tổng quan về Partition table](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/partition.md)
+### [4.2 Phân vùng GPT](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/gpt.md)
+### [4.3 Phân vùng MBR](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/mbr.md)
+### [4.4 Chuẩn BIOS](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/bios.md)
+### [4.5 Chuẩn UEFI](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/UEFI.md)
+
 ## 5. Ceph
 ### [5.1 Tổng quan về Ceph](https://github.com/lacoski/khoa-luan/blob/master/Ceph/tong%20quan%20ceph.md)

@@ -26,7 +26,7 @@
 ### [4.1 Tổng quan về Partition table](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/partition.md)
 ### [4.2 Phân vùng GPT](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/gpt.md)
 ### [4.3 Phân vùng MBR](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/mbr.md)
-### [4.4 Chuẩn BIOS](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/bios.md)
+### [4.4 Chuẩn BIOS](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/BIOS.md)
 ### [4.5 Chuẩn UEFI](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/UEFI.md)
 
 ## 5. Ceph

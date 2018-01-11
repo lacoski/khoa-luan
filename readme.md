@@ -20,7 +20,7 @@
 
 
 ## [3. Raid](https://github.com/lacoski/khoa-luan/tree/master/RAID)
-### [3.1 Tổng quan Raid 0 1 5](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)
+### [3.1 Tổng quan Raid](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)
 ### [3.2 Phân loại Raid cứng và mềm](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%20cung%20mem.md)
 ## 4. Partition table
 ### [4.1 Tổng quan về Partition table](https://github.com/lacoski/khoa-luan/blob/master/Partition%20table/partition.md)

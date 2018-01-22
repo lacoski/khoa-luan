@@ -10,6 +10,10 @@
 ### [1.6 Truy cập Filesystem](  https://github.com/lacoski/khoa-luan/blob/master/Filesystem/accessFS.md)
 ### [1.7 Cấu trúc, tổ chức thư mục](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/direc-struc.md)
 ### [1.8 Quản lý quyền truy nhập](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/permission-access.md)
+### [1.9 Cấu trúc File system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/fs-struc.md)
+### [1.10 Thực thi File system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/fs-imple.md)
+
+
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)

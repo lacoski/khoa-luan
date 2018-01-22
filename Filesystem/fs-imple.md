@@ -24,7 +24,7 @@ __In-memory information (Thông tin bộ nhớ trong)__ được sử dụng cho
 <div style="text-align:center"> <img src=https://raw.githubusercontent.com/lacoski/khoa-luan/master/Filesystem/PIC/fs-imp-1.png></div>
 
 > - 1 số OS (như Linux/Unix) đối xử direc như file. 1 trường phân biệt nó là directory.
-- 1 số OS (như Windows) phân biệt file và direc.
+> - 1 số OS (như Windows) phân biệt file và direc.
 
 Tuy thuộc vào kiến trúc, __logical file system__ có thể gọi __file-organization module__ để __map directory I/O__ tới __disk-block number__, chuyển vào FS cơ bản, IO control system.
 

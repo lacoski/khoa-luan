@@ -18,7 +18,7 @@ FS được tạo thành từ nhiều cấp, các cấp được thiết kế đ
 
 <div style="text-align:center"> <img src=https://raw.githubusercontent.com/lacoski/khoa-luan/master/Filesystem/PIC/fs-struc-1.png></div>
 
-__I/O control - Điều khiển nhập/xuất __
+__I/O control - Điều khiển nhập/xuất__
 - Là cấp thấp nhất chứa các device drivers và các bộ quản lý ngắt để chuyển thông tin giữa main memory và disk system.
 - __Device driver__ có thể coi như bộ dịch. Input high level cmd, output chỉ thị phân cứng __(hardware-specific instructions)__ sử dụng bởi __Hardware controller (giao diện I/O device toàn hệ thống)__.
 - Device driver thường viết các mẫu bit xác định tới các vị trí trong I/O controller’s memory để báo với bộ điều khiển vị trí trên thiết bị nào và hoạt động gì xảy ra.

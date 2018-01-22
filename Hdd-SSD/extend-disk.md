@@ -12,7 +12,7 @@ Tốc độ đĩa chia thành 2 phần:
 
 Truyền tài dữ liệu trên bus được thực hiện bởi bộ xử lý điện tích đặc biệt, gọi ‘controllers’
 
-## ** Disk Scheduling – Lập lịch ổ đĩa **
+## **Disk Scheduling – Lập lịch ổ đĩa**
 
 OS có trách nhiệm phân bố, tối ưu khả năng sử dụng disk.
 - Với hdd, thời gian truy cập gồm 2 phần:

@@ -7,6 +7,9 @@
 ### [1.3 Các loại filesystem trong Linux](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/type-file-system.md)
 ### [1.4 Cấu trúc file system ](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/filesystem-structure.md)
 ### [1.5 FUSE ](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/FUSE.md)
+### [1.6 Truy cập Filesystem](  https://github.com/lacoski/khoa-luan/blob/master/Filesystem/accessFS.md)
+### [1.7 Cấu trúc, tổ chức thư mục](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/direc-struc.md)
+### [1.8 Quản lý quyền truy nhập](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/permission-access.md)
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)

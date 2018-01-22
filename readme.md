@@ -12,7 +12,8 @@
 ### [1.8 Quản lý quyền truy nhập](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/permission-access.md)
 ### [1.9 Cấu trúc File system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/fs-struc.md)
 ### [1.10 Thực thi File system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/fs-imple.md)
-
+### [1.11 Cấp phát bộ nhớ system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/capphat.md)
+### [1.12 Quản lý bộ nhớ trống system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/quanly-kg.md)
 
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)

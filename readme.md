@@ -14,7 +14,8 @@
 ### [1.10 Thực thi File system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/fs-imple.md)
 ### [1.11 Cấp phát bộ nhớ system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/capphat.md)
 ### [1.12 Quản lý bộ nhớ trống system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/quanly-kg.md)
-
+### [1.13 Nâng cao hiệu năng](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/perfor.md)
+### [1.14 Khôi phục FS](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/recovery.md)
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)

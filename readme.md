@@ -28,7 +28,7 @@
 ### [2.4 Tổng quan DAS NAS ISCSI SAN](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/DAS-NAS-ISCSI%20SAN.md)
 ### [2.5 Chuẩn kết nổi ổ đĩa ](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/chuan%20ket%20noi%20disk.md)
 ### [2.6 Vấn đề về tốc độ Disk ](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/extend-disk.md)
-### [2.7 Cấu trúc, phân vùng Disk](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/extend-disk.md)
+### [2.7 Cấu trúc, phân vùng Disk](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/Disk-Formatting.md)
 
 ## [3. Raid](https://github.com/lacoski/khoa-luan/tree/master/RAID)
 ### [3.1 Tổng quan Raid](https://github.com/lacoski/khoa-luan/blob/master/RAID/raid%200%201%205.md)

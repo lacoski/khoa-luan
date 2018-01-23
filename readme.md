@@ -16,6 +16,7 @@
 ### [1.12 Quản lý bộ nhớ trống system](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/quanly-kg.md)
 ### [1.13 Nâng cao hiệu năng](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/perfor.md)
 ### [1.14 Khôi phục FS](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/recovery.md)
+### [1.15 IO Hệ thống IO, IO Hardware, Buffer and Cache ](https://github.com/lacoski/khoa-luan/blob/master/Filesystem/IO-system.md)
 
 ## [2. Hdd - SSD](https://github.com/lacoski/khoa-luan/tree/master/Hdd-SSD)
 ### [2.2 Tổng quan về hdd](https://github.com/lacoski/khoa-luan/blob/master/Hdd-SSD/hdd.md)

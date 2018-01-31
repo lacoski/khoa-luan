@@ -40,6 +40,12 @@ __File Systems (FS)__
 -	Sắp xếp dữ liệu trên đĩa cứng máy tính
 -	Quản lý vị trí vật lý của mọi thành phần dữ liệu
 
+__Physical Drive__
+- Thiết bị lưu trữ dữ liệu, ví dụ như trong linux nó là /dev/sda
+
+__Partition__
+- Partitions là các phân vùng của Physical Drive, mỗi Physical Drive có 4 partition, trong đó partition bao gồm 2 loại chính là primary partition và extended partition.
+
 __Mô hình tổng quan__
 
 ![](PIC/lvm-3.png)

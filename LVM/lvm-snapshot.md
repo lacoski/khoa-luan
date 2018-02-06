@@ -77,21 +77,21 @@ __Vấn đề__
 
 > Nếu LVM đầy, snapshot sẽ tự động xóa. Tính năng bảo đảm sẽ luôn có đủ không gian lưu FS.
 
-## Phần 2: Mở rộng LVM
-### Mở rộng Snapshot
+### Phần 2: Mở rộng LVM
+#### Mở rộng Snapshot
 ```
 # lvextend -L +100M /dev/data-store/store-1_snap
 ```
 ![](PIC/snap-10.png)
-### Kiểm tra lại thông số
+#### Kiểm tra lại thông số
 ```
 # lvs
 # lvdisplay
 ```
 ![](PIC/snap-11.png)
 
-## Phần 3: Khôi phục Snapshot (Merging)
-### Umount thư mục
+### Phần 3: Khôi phục Snapshot (Merging)
+#### Umount thư mục
 ```
 # umount /data-store/store-1
 ```
@@ -100,7 +100,7 @@ __Kiểm tra__
 # df -h
 ```
 ![](PIC/snap-12.png)
-### Khôi phục theo Snapshot
+#### Khôi phục theo Snapshot
 ```
 # lvconvert --merge /dev/data-store/store-1_snap
 ```
@@ -119,7 +119,7 @@ __Kiểm tra__
 ```
 ![](PIC/snap-14.png)
 
-## Tự động mở rổng Snapshot (Xem thêm tài liệu gốc)
+### Tự động mở rổng Snapshot (Xem thêm tài liệu gốc)
 
 ## Nguồn
 https://www.tecmint.com/take-snapshot-of-logical-volume-and-restore-in-lvm/

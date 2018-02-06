@@ -43,6 +43,8 @@
 ### [5.1 Tổng quan về LVM](https://github.com/lacoski/khoa-luan/blob/master/LVM/overview-LVM.md)
 ### [5.1.1 Các loại Logical Volumn](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-type.md)
 ### [5.2 Thác tác cơ bản trên LVM](https://github.com/lacoski/khoa-luan/blob/master/LVM/basic-lvm.md)
+### [5.3 LVM Snapshot](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-snapshot.md)
+
 
 ## 6. Ceph
 ### [6.1 Tổng quan về Ceph](https://github.com/lacoski/khoa-luan/blob/master/Ceph/tong%20quan%20ceph.md)

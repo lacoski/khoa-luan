@@ -119,4 +119,7 @@ __Kiểm tra__
 ```
 ![](PIC/snap-14.png)
 
-## Tự động mở rổng Snapshot
+## Tự động mở rổng Snapshot (Xem thêm tài liệu gốc)
+
+## Nguồn
+https://www.tecmint.com/take-snapshot-of-logical-volume-and-restore-in-lvm/

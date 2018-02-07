@@ -123,3 +123,4 @@ __Kiểm tra__
 
 ## Nguồn
 https://www.tecmint.com/take-snapshot-of-logical-volume-and-restore-in-lvm/
+https://rwmj.wordpress.com/2014/05/22/using-lvms-new-cache-feature/

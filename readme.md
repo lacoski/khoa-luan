@@ -47,6 +47,7 @@
 ### [5.4 Thin Provisioning Volume](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-thin.md)
 ### [5.5 Striped Logical Volume ](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-strip.md)
 ### [5.6 Mirrored Logical Volume ](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-mirror.md)
+### [5.7 Cache Logical Volume ](https://github.com/lacoski/khoa-luan/blob/master/LVM/lvm-cache.md)
 
 ## 6. Ceph
 ### [6.1 Tổng quan về Ceph](https://github.com/lacoski/khoa-luan/blob/master/Ceph/tong%20quan%20ceph.md)

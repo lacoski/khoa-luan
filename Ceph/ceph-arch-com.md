@@ -1,4 +1,4 @@
-# Kiến trúc và các thành phần Ceph
+# Ceph - Phần 2: Kiến trúc và các thành phần Ceph
 ---
 ## Ceph storage architecture
 Ceph storage cluster xây dựng từ 1 vài software daemons. Mỗi tiền trình đều có vài trò riêng trong tính năng của Ceph và có những giá trị đặc biệt tương ứng. Đây là yếu tố góp phần giảm giá thành khi so sánh Ceph với các hệ thống tương tự.

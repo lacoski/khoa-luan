@@ -1,7 +1,7 @@
 # Cài đặt Ceph Storage Cluster trên CentOS 7 (Ceph jewel)
 ---
 ## Tổng quan
-(xem docs cơ bản về ceph)
+[Tổng quan về Ceph](tong quan ceph.md)
 
 ## Chuẩn bị
 ### Về tài nguyên

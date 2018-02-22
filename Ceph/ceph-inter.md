@@ -1,4 +1,4 @@
-# Bên trong Ceph
+# Phần 3: Nội tại Ceph
 ---
 ## Object
 Đối tượng gồm thành phần data và metadata được đóng gói => cung cấp 1 thuộc tính định danh (globally unique identifier). Định danh riêng bảo đảm object sẽ độc nhất trong storage cluster.

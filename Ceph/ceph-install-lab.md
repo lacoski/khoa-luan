@@ -382,3 +382,6 @@ sudo ceph -s
 > Ceph monitor IP = 192.168.2.129:6789
 
 > Có 2 OSD server, và có thể sử dụng 30gb dung lượng trên cluster
+
+## Nguồn
+https://www.howtoforge.com/tutorial/how-to-build-a-ceph-cluster-on-centos-7/

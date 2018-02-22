@@ -155,8 +155,8 @@ Host osd2
         Hostname osd2
         User cephuser
 
-Host osd3
-        Hostname osd3
+Host client
+        Hostname client
         User cephuser
 ```
 ![](PIC/ceph-in-lab-1.png)

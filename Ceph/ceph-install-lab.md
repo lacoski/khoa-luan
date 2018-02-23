@@ -168,7 +168,7 @@ chmod 644 ~/.ssh/config
 
 Chuyển ssh-key tới các node còn lại
 ```
-ssh-keyscan osd1 osd2 osd3 client >> ~/.ssh/known_hosts
+ssh-keyscan osd1 osd2 client mon1 >> ~/.ssh/known_hosts
 ssh-copy-id osd1
 ssh-copy-id osd2
 ssh-copy-id mon1

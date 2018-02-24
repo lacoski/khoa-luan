@@ -4,6 +4,8 @@
 [Tổng quan về Ceph](tong-quan-ceph.md)
 
 ## Chuẩn bị
+### Sơ đồ
+![](PIC/ceph-in-lab-sodo.png)
 ### Về tài nguyên
 __Yêu cầu sử dụng 5 node, tất cả cài đặt CentOS__
 ```

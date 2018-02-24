@@ -1,6 +1,9 @@
 # Cài đặt Ceph Storage Cluster 3 Node Jewel - CentOS 7
 ---
 ## Chuẩn bị
+
+### Sơ đồ
+![](PIC/ceph-3node-lab-0.png)
 ### Về tài nguyên
 
 __Yêu cầu sử dụng 3 node, tất cả cài đặt CentOS 7__

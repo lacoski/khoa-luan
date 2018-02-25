@@ -57,3 +57,4 @@
 ### [6.4.1 Sử dụng Ceph như Block Device trên CentOS 7](https://github.com/lacoski/khoa-luan/blob/master/Ceph/lab-use-ceph.md)
 
 ### [6.5 Cài đặt Ceph Storage Cluster 3 Node Jewel - CentOS 7](https://github.com/lacoski/khoa-luan/blob/master/Ceph/ceph-3node-lab.md)
+### [6.6 Cài đặt Ceph Storage Cluster 3 Node luminous - CentOS 7](https://github.com/lacoski/khoa-luan/blob/master/Ceph/ceph-lab-lumi.md)

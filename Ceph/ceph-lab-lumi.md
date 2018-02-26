@@ -7,39 +7,7 @@
 
 ### Về tài nguyên
 
-__Yêu cầu sử dụng 3 node, tất cả cài đặt CentOS 7__
-
-| Tên node | Public Network | Cluster Network |
-|---|---|---|
-| ceph-admin | 192.168.2.133 | 192.168.3.128 |
-| ceph-node-1 | 192.168.2.134 | 192.168.3.129 |
-| ceph-node-2 | 192.168.2.135 | 192.168.3.130 |
-
-> quyền root trên tất cả các node
-
-### Cấu hình mỗi máy
-#### __ceph-admin__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-```
-
-#### __ceph-node-1__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-Hard Disk:  20 GB (Dùng cho Ceph Cluster)
-```
-
-#### __ceph-node-2__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-Hard Disk:  20 GB (Dùng cho Ceph Cluster)
-```
+![](PIC/ceph-lumi-lab-sodo.PNG)
 
 ## Cài đặt
 ### Phần 1 - Cấu hình chuẩn bị trên tất cả các node

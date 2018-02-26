@@ -8,52 +8,7 @@
 ![](PIC/ceph-in-lab-sodo.png)
 ### Về tài nguyên
 __Yêu cầu sử dụng 5 node, tất cả cài đặt CentOS__
-```
-ceph-admin    192.168.2.128
-mon1          192.168.2.129
-osd1          192.168.2.130
-osd2          192.168.2.131
-client        192.168.2.132
-```
-> quyền root trên tất cả các node
-
-### Cấu hình mỗi máy
-#### __ceph-admin__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-```
-
-#### __mon1__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-```
-
-#### __osd-1__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-Hard Disk:  20 GB (Dùng cho Ceph Cluster)
-```
-
-#### __osd-2__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-Hard Disk:  20 GB (Dùng cho Ceph Cluster)
-```
-
-#### __client__
-```
-CPU:        2 core
-RAM:        2 GB
-Hard Disk:  50 GB
-```
+![](PIC/ceph-use-lab-sodotn.png)
 
 ## Cài đặt
 ### Phần 1 - Cấu hình chuẩn bị trên tất cả các node

@@ -13,12 +13,12 @@ Network:   ens33 - 192.168.2.143 (NAT Card)
 ### Phần 1: Cài đặt Php 7.2.x
 #### Bước 1: Cài đặt repo EPEL và REMO trong CentOS 7
 ```
-# yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-# yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+# yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
+# yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
 ```
 #### Bước 2: Cài đặt yum-utils
 ```
-# yum install yum-utils
+# yum install yum-utils -y
 ```
 Sử dụng yum-config-manager (có được sau khi càu yum-utils), lựa chọn phiên bản Remi php 7.2 (phiên bản sau khi cài 7.2.2)
 ```

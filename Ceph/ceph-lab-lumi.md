@@ -7,7 +7,7 @@
 
 ### Về tài nguyên
 
-![](PIC/ceph-lumi-lab-sodo.PNG)
+![](PIC/ceph-lumi-lab-sodo.png)
 
 ## Cài đặt
 ### Phần 1 - Cấu hình chuẩn bị trên tất cả các node

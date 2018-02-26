@@ -66,4 +66,4 @@
 
 ## 7. Nextcloud, Owncloud
 ### [7.1 Cấu hình Nextcloud 13 trên CentOS 7](Nextcloud/nc-lab-install.md)
-### [7.2 Cấu hình Owncloud 10 trên CentOS 7](Owncloud/oc-lab-install.md)
+### [7.2 Cấu hình Owncloud 10 trên CentOS 7](Nextcloud/oc-lab-install.md)

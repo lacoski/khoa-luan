@@ -140,4 +140,5 @@ __Sau khi cầu hình thành công__
 
 ## Nguồn
 https://www.marksei.com/install-nextcloud-12-centos-7/
+
 https://www.tecmint.com/install-php-7-in-centos-7/

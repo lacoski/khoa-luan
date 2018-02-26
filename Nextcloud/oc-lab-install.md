@@ -120,4 +120,5 @@ __Sau khi cầu hình thành công__
 
 ## Nguồn
 https://www.marksei.com/install-owncloud-10-server-centos/
+
 https://www.tecmint.com/install-php-7-in-centos-7/

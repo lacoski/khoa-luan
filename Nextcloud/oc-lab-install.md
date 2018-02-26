@@ -1,4 +1,4 @@
-# Cài đặt Nextcloud 13 trên CentOS 7
+# Cài đặt Owncloud 10 trên CentOS 7
 ---
 ## Chuẩn bị
 Chuẩn bị 1 node, chạy CentOS 7 với cấu hình
@@ -6,7 +6,7 @@ Chuẩn bị 1 node, chạy CentOS 7 với cấu hình
 CPU:       2 core
 RAM:       2 gb
 HDD:       50 gb
-Network:   ens33 - 192.168.2.143 (NAT Card)
+Network:   ens33 - 192.168.2.142 (NAT Card)
 ```
 
 ## Cài đặt
@@ -26,7 +26,7 @@ Sử dụng yum-config-manager (có được sau khi càu yum-utils), lựa ch�
 ```
 #### Bước 3: Cài đặt php 7 và các package hỗ trợ
 ```
-# yum install php php-mbstring php-pdo php-json php-pear php-mbstring php-dom php-xml php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
+# yum install php php-mbstring php-pdo php-json php-pear php-mbstring php-dom php-xml php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo php-intl -y
 ```
 Kiểm tra phiên bản sau khi cài
 ```
@@ -57,43 +57,23 @@ Truy cập Mariadb
 ```
 Tại màn hình CMD:
 ```
-CREATE DATABASE nextcloud;
-CREATE USER 'nc_user'@'localhost' IDENTIFIED BY 'NHẬP_PASS_TẬI_ĐÂY';
-GRANT ALL PRIVILEGES ON nextcloud.* TO 'nc_user'@'localhost';
+CREATE DATABASE owncloud;
+CREATE USER 'oc_user'@'localhost' IDENTIFIED BY 'NHẬP_PASS_TẬI_ĐÂY';
+GRANT ALL PRIVILEGES ON owncloud.* TO 'oc_user'@'localhost';
 FLUSH PRIVILEGES;
 ```
 > Lưu passwd của db vừa tạo, sử dụng cho phần Sau
 
-### Phần 3: Cài đặt nextcloud
-#### Bước 1: Truy cập cấu hình apache để chạy nextcloud
+### Phần 3: Cài đặt Owncloud
+#### Bước 1: Thiết lập gói
 ```
-# cd /var/www/html
-# wget https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip
-# unzip nextcloud-13.0.0.zip
-# mkdir nextcloud/data
-# chown -R apache:apache nextcloud
+# rpm --import https://download.owncloud.org/download/repositories/10.0/CentOS_7/repodata/repomd.xml.key
+# curl https://download.owncloud.org/download/repositories/10.0/CentOS_7/ce:10.0.repo | tee /etc/yum.repos.d/owncloud_CE:10.0.repo
 ```
-#### Bước 2: Cấu hình Apache config
+#### Bước 2: Cài đặt gói Owncloud
 ```
-# vim /etc/httpd/conf.d/nextcloud.conf
-
-# content
-Alias /nextcloud "/var/www/html/nextcloud/"
-
-<Directory /var/www/html/nextcloud/>
-  Options +FollowSymlinks
-  AllowOverride All
-
- <IfModule mod_dav.c>
-  Dav off
- </IfModule>
-
- SetEnv HOME /var/www/html/nextcloud
- SetEnv HTTP_HOME /var/www/html/nextcloud
-
-</Directory>
+# yum install owncloud
 ```
-
 ### Phần 4: Cầu hình apache và SELinux, Firewalld
 #### Bước 1: Cấu hình SELinux
 Tắt SELinux
@@ -124,20 +104,20 @@ Cấu hình mở port Http và Https
 # firewall-cmd --reload
 ```
 
-### Phần 5: Thiết lập Nextcloud
-#### Thiết lập Nextcloud web
+### Phần 5: Thiết lập Owncloud
+#### Thiết lập Owncloud Web
 
 ```
-Truy cập  "http://192.168.2.143/nextcloud/"
+Truy cập  "http://192.168.2.142/owncloud/"
 ```
 __Giao diện cấu hình__
+![](PIC/oc-lab-install-1.jpg)
 
-![](PIC/nc-lab-install-2.jpg)
 
 __Sau khi cầu hình thành công__
+![](PIC/oc-lab-install-2.jpg)
 
-![](PIC/nc-lab-install-3.jpg)
 
 ## Nguồn
-https://www.marksei.com/install-nextcloud-12-centos-7/
+https://www.marksei.com/install-owncloud-10-server-centos/
 https://www.tecmint.com/install-php-7-in-centos-7/

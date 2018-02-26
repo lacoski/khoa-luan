@@ -112,7 +112,7 @@ __Tùy chọn 1:__
 
 Tắt firewall
 ```
-# systemclt stop firewalld
+# systemctl stop firewalld
 # systemctl disable firewalld
 ```
 __Tùy chọn 2:__

@@ -137,3 +137,7 @@ __Giao diện cấu hình__
 __Sau khi cầu hình thành công__
 
 ![](PIC/nc-lab-install-3.jpg)
+
+## Nguồn
+https://www.marksei.com/install-nextcloud-12-centos-7/
+https://www.tecmint.com/install-php-7-in-centos-7/

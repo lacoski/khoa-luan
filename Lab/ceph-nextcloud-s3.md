@@ -43,11 +43,11 @@ vim /etc/hosts
 #### Bước 2: Bổ sung tại Nextcloud node (ceph-client)
 > Thực hiện các bước sau trên __ceph-client__
 
-#### Bước 1: Truy cập ceph-client
+##### Bước 2.1: Truy cập ceph-client
 ```
 ssh root@ceph-client
 ```
-#### Bước 2: Tạo Ceph User
+##### Bước 2.2: Tạo Ceph User
 ```
 useradd -d /home/cephuser -m cephuser
 passwd cephuser
@@ -60,7 +60,7 @@ chmod 0440 /etc/sudoers.d/cephuser
 sed -i s'/Defaults requiretty/#Defaults requiretty'/g /etc/sudoers
 ```
 
-#### Bước 3: Cấu hình NTP
+##### Bước 2.3: Cấu hình NTP
 Sử dụng NTP đồng bộ thời gian trên tất cả các Node.
 > Ở đây sử dụng NTP pool US.
 
@@ -71,16 +71,16 @@ hwclock --systohc
 systemctl enable ntpd.service
 systemctl start ntpd.service
 ```
-#### Bước 4 (Tùy chọn): Nếu chạy tất cả node trên VMware, cần sử dụng công cụ hỗ trợ
+##### Bước 2.4 (Tùy chọn): Nếu chạy tất cả node trên VMware, cần sử dụng công cụ hỗ trợ
 ```
 yum install -y open-vm-tools
 ```
 
-#### Bước 5: Hủy bỏ SELinux
+##### Bước 2.5: Hủy bỏ SELinux
 ```
 sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 ```
-#### Bước 6: Cấu hình Firewalld
+##### Bước 2.6: Cấu hình Firewalld
 Hủy bỏ thiêt lập firewalld
 ```
 systemctl stop firewalld

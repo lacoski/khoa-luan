@@ -119,7 +119,7 @@ Host ceph-client
         Hostname ceph-client
         User cephuser
 ```
-Chuyển ssh-key tới các node còn lại
+Chuyển ssh-key tới node ceph-client
 ```
 ssh-keyscan ceph-client >> ~/.ssh/known_hosts
 ssh-copy-id ceph-client

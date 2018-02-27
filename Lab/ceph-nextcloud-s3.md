@@ -1,4 +1,4 @@
-# Kết hợp Ceph với Nextcloud thông qua Radosgw, S3 interface
+# Kết hợp Ceph Jewel với Nextcloud 13 thông qua Radosgw, S3 interface
 ---
 ## Chuẩn bị
 ### Sơ đồ

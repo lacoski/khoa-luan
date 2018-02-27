@@ -67,3 +67,6 @@
 ## 7. Nextcloud, Owncloud
 ### [7.1 Cấu hình Nextcloud 13 trên CentOS 7](Nextcloud/nc-lab-install.md)
 ### [7.2 Cấu hình Owncloud 10 trên CentOS 7](Nextcloud/oc-lab-install.md)
+
+## 8. Lab tổng hợp
+### [8.1 Kết hợp Ceph Jewel với Nextcloud 13 thông qua Radosgw, S3 interface]

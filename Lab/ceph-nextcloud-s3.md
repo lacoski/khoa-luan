@@ -426,3 +426,6 @@ __Upload data lên Nextcloud, dung lượng Ceph sẽ thay đổi__
             1740 MB used, 28957 MB / 30697 MB avail # Dung lượng thay đổi
                  316 active+clean
 ```
+
+## Nguồn
+https://github.com/tigerlinux/tigerlinux-extra-recipes/tree/master/recipes/misc/ceph-owncloud-lab

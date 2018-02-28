@@ -50,8 +50,10 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 Cấu hình trên tất cả các node
 ```
 vim /etc/hosts
-
-# content
+```
+Nội dung
+```
+# content vim
 192.168.2.133 ceph-admin
 
 192.168.2.134 ceph-node-1
@@ -83,8 +85,10 @@ ssh-keygen
 #### Bước 3: Cấu hình ssh file
 ```
 vim ~/.ssh/config
-
-# content
+```
+Nội dung
+```
+# content vim
 
 Host ceph-admin
         Hostname ceph-admin
@@ -154,8 +158,10 @@ ceph-deploy new ceph-admin
 Cấu hình ceph.conf
 ```
 vim ceph.conf
-
-# Content (Sửa lại theo lab)
+```
+Nội dung
+```
+# Content vim (Sửa lại theo lab)
 [global]
 fsid = 60643eb6-a568-42ae-b665-114807627e09
 auth_cluster_required = cephx

@@ -29,8 +29,10 @@ __Cài đặt Nextcloud__
 __Cấu hình file hosts__
 ```
 vim /etc/hosts
-
-# content
+```
+Nội dung
+```
+# content vim
 192.168.2.133 ceph-admin
 
 192.168.2.134 ceph-node-1
@@ -99,10 +101,9 @@ Chỉnh sửa cấu hình ssh
 ```
 vim ~/.ssh/config
 ```
-
 Nội dung cập nhật
-
 ```
+# vim content
 Host ceph-admin
         Hostname ceph-admin
         User cephuser

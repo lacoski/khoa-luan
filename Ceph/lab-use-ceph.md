@@ -38,8 +38,10 @@ systemctl start ntpd.service
 #### Bước 3: Cấu hình file host
 ```
 vim /etc/hosts
-
-# content
+```
+Nội dung
+```
+# content vim
 192.168.2.128 ceph-admin
 192.168.2.129 mon1
 192.168.2.130 osd1
@@ -55,19 +57,24 @@ ssh root@ceph-admin
 ```
 
 #### Bước 2: Kiểm tra cấu hình ssh config, host file
-Kiểm tra cấu hình file ssh config
+__Kiểm tra cấu hình file ssh config__
 ```
 vim ~/.ssh/config
-
-# Thêm nếu chưa có
+```
+Nội dung
+```
+# Thêm nếu chưa có (vim content)
 Host client
         Hostname client
         User cephuser
-
-
+```
+__Chỉnh sửa file host__
+```
 vim /etc/hosts
-
-# Thêm nếu chưa có
+```
+Nội dung
+```
+# Thêm nếu chưa có (vim content)
 192.168.2.132 client
 ```
 
@@ -163,8 +170,10 @@ df -hT
 ```
 cd /usr/local/bin/
 vim rbd-mount
-
-# content
+```
+Nội dung
+```
+# content vim
 #!/bin/bash
 
 # Script Author: http://bryanapperson.com/
@@ -201,8 +210,10 @@ Tới systemd directory, tại service file
 ```
 cd /etc/systemd/system/
 vim rbd-mount.service
-
-# content
+```
+Nội dung
+```
+# content vim
 [Unit]
 Description=RADOS block device mapping for $rbdimage in pool $poolname"
 Conflicts=shutdown.target

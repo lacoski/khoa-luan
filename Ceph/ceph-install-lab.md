@@ -51,8 +51,10 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 Cấu hình trên tất cả các node
 ```
 vim /etc/hosts
-
-# content
+```
+Nội dung
+```
+# content vim
 192.168.2.128 ceph-admin
 192.168.2.129 mon1
 192.168.2.130 osd1
@@ -94,8 +96,10 @@ ssh-keygen
 #### Bước 3: Cấu hình ssh file
 ```
 vim ~/.ssh/config
-
-# content
+```
+Nội dung
+```
+# content vim
 Host ceph-admin
         Hostname ceph-admin
         User cephuser
@@ -239,8 +243,10 @@ ceph-deploy new mon1
 Cấu hình ceph.conf
 ```
 vim ceph.conf
-
-# Add thêm
+```
+Nội dung
+```
+# Add thêm (vim)
 public network = 192.168.2.0/24
 osd pool default size = 2
 ```

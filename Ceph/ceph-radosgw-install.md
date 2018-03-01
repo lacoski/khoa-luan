@@ -1,4 +1,4 @@
-# Triển khai Radosgw trên Ceph Cluster
+# Thiết lập Radosgw trên Ceph Cluster
 ---
 ## Chuẩn bị
 ### Sơ đồ

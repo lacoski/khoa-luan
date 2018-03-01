@@ -36,3 +36,14 @@ Obj storage, như tên, chúng quản lý data = obj. Mỗi objet lưu data, met
 Trong môi trường production, nếu yêu cầu Ceph RADOS gateway thực hiện nhưng tác vụ năng, ta cần tách riêng node thành 1 máy chủ vật lý riêng. Khi cần tiết kiệm, ta có thể tích hợp nó với Ceph Monitor node.
 
 ![](PIC/ceph-provi-radosgw.png)
+
+#### Các phương pháp truy cập
+Ceph hỗ trợ truy cập object storage thông qua  S3-interface và Swift-compatible APIs.
+
+#### S3 API-compatible Ceph object storage
+Được cung cấp Simple Storage Service (S3), cho phép cung cấp storage thông qua web interfaces như REST. Vì vậy, Ceph hỗ trợ mở rộng cho phương pháp này, cho phép s3 app client truy cập Ceph storage cluster thông qua access và secret key.
+
+(xem thêm trong lab triển khai radosgw)
+
+#### Swift API-compatible Ceph object storage
+Ceph hỗ trợ RESTful API tương thích với phương pháp truy cập data model cơ bản cung cấp bới Swift API.

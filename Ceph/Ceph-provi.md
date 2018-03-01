@@ -34,3 +34,5 @@ Obj storage, như tên, chúng quản lý data = obj. Mỗi objet lưu data, met
 ![](PIC/ceph-provi-2.png)
 
 Trong môi trường production, nếu yêu cầu Ceph RADOS gateway thực hiện nhưng tác vụ năng, ta cần tách riêng node thành 1 máy chủ vật lý riêng. Khi cần tiết kiệm, ta có thể tích hợp nó với Ceph Monitor node.
+
+![](PIC/ceph-provi-radosgw.png)

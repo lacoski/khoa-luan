@@ -55,7 +55,8 @@
 ### [6.1.2 Kiến trúc và thành phần Ceph](Ceph/ceph-arch-com.md)
 ### [6.1.3 Nội tại Ceph](Ceph/ceph-inter.md)
 ### [6.1.4 Các vấn đề cần cân nhắc khi triển khai Ceph](Ceph/ceph-deploy-re.md)
-### [6.1.5 Tổng hợp các câu lệnh thường sử dụng trên Ceph](Ceph/ceph-cmd-aluser.md)
+### [6.1.6 Các giải pháp lưu trữ của Ceph](Ceph/Ceph-provi.md)
+### [6.1.7 Tổng hợp các câu lệnh thường sử dụng trên Ceph](Ceph/ceph-cmd-aluser.md)
 
 ### 6.2 Lab trên Ceph
 ### [6.2.1 Cài đặt Ceph trên CentOS 7](Ceph/ceph-install-lab.md)

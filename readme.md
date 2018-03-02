@@ -51,18 +51,18 @@
 
 ## 6. Ceph
 ### 6.1 Lý thuyết về Ceph
-### [6.1.1 Tổng quan về Ceph](Ceph/tong-quan-ceph.md)
-### [6.1.2 Kiến trúc và thành phần Ceph](Ceph/ceph-arch-com.md)
-### [6.1.3 Nội tại Ceph](Ceph/ceph-inter.md)
-### [6.1.4 Các vấn đề cần cân nhắc khi triển khai Ceph](Ceph/ceph-deploy-re.md)
-### [6.1.6 Các giải pháp lưu trữ của Ceph](Ceph/Ceph-provi.md)
-### [6.1.7 Tổng hợp các câu lệnh thường sử dụng trên Ceph](Ceph/ceph-cmd-aluser.md)
+### [6.1.1 Tổng quan về Ceph](Ceph/ceph-overview.md)
+### [6.1.2 Kiến trúc và thành phần Ceph](Ceph/ceph-architecture-component.md)
+### [6.1.3 Nội tại Ceph](Ceph/ceph-inside.md)
+### [6.1.4 Các vấn đề cần cân nhắc khi triển khai Ceph](Ceph/ceph-deploy-planning.md)
+### [6.1.6 Các giải pháp lưu trữ của Ceph](Ceph/Ceph-provide.md)
+### [6.1.7 Tổng hợp các câu lệnh thường sử dụng trên Ceph](Ceph/ceph-cmd-use.md)
 
 ### 6.2 Lab trên Ceph
-### [6.2.1 Cài đặt Ceph trên CentOS 7](Ceph/ceph-install-lab.md)
-### [6.2.1.1 Sử dụng Ceph như Block Device trên CentOS 7](Ceph/lab-use-ceph.md)
+### [6.2.1 Cài đặt Ceph trên CentOS 7](Ceph/ceph-install-basic-jewel-lab.md)
+### [6.2.1.1 Sử dụng Ceph như Block Device trên CentOS 7](Ceph/ceph-use-block-device.md)
 ### [6.2.2 Cài đặt Ceph Storage Cluster 3 Node Jewel - CentOS 7](Ceph/ceph-install-jewel-lab.md)
-### [6.2.3 Cài đặt Ceph Storage Cluster 3 Node luminous - CentOS 7](Ceph/ceph-lab-lumi.md)
+### [6.2.3 Cài đặt Ceph Storage Cluster 3 Node luminous - CentOS 7](Ceph/ceph-install-luminous-lab.md)
 ### [6.2.4 Thiết lập Radosgw trên Ceph Cluster](Ceph/ceph-radosgw-install.md)
 
 ## 7. Nextcloud, Owncloud

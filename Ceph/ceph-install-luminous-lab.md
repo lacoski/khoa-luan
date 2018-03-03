@@ -282,6 +282,15 @@ sudo chmod 644 /etc/ceph/ceph.client.admin.keyring
 
 > Sau bước trên thiết lập Ceph Cluster hoàn tất
 
+Triển khai Ceph MGR nodes
+```
+ceph-deploy mgr create ceph-admin:ceph-mgr-1
+```
+
+__Kết quả__
+
+![](PIC/ceph-lumi-lab-8-bs.png)
+
 ### Phần 6: Kiểm tra Ceph setup
 #### Kiểm tra tại 1 trong các Ceph monitor node
 Truy cập 1 trong các ceph monitor
@@ -297,4 +306,4 @@ Kiểm tra cluster status
 ```
 sudo ceph -s
 ```
-![](PIC/ceph-lumi-lab-6.png)
+![](PIC/ceph-lumi-lab-8-bs.png)

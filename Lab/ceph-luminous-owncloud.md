@@ -2,9 +2,9 @@
 ---
 ## Chuẩn bị
 ### Sơ đồ
-
+![](PIC/ceph-lab-luminous-nextcloud-sodo.PNG)
 ### Về tài nguyên
-
+![](PIC/ceph-lab-luminous-nextcloud-tn.PNG)
 __Chuẩn bị 4 node, chạy CentOS 7 với cấu hình__
 
 ## Bắt đầu
@@ -132,8 +132,7 @@ Kiểm tra bằng node ceph-admin
 ```
 [root@ceph-admin ~]# radosgw-admin bucket list
 [
-    "my-new-bucket",
-    "nextcloud"
+    "my-new-bucket",  
 ]
 ```
 Xóa bucket test
@@ -141,3 +140,47 @@ Xóa bucket test
 radosgw-admin bucket rm my-new-bucket
 ```
 #### Bước 3: Thiết lập trên ceph-client (Owncloud node)
+__Kiểm tra thông tin user s3 vừa tạo__
+```
+# radosgw-admin user info --uid=ownclouds3
+{
+    "user_id": "ownclouds3",
+    "display_name": "Owncloud S3 User",
+    "email": "",
+    "suspended": 0,
+    "max_buckets": 1000,
+    "auid": 0,
+    "subusers": [],
+    "keys": [
+        {
+            "user": "ownclouds3",
+            "access_key": "VJRQ3C2RHWJ1T91BSD5B",
+            "secret_key": "APyIJpxRci3ETojXWz4fEIOiJMMMifYftFRK0JUM"
+        }
+    ],
+    "swift_keys": [],
+    "caps": [],
+    "op_mask": "read, write, delete",
+    "default_placement": "",
+    "placement_tags": [],
+    "bucket_quota": {
+        "enabled": false,
+        "max_size_kb": -1,
+        "max_objects": -1
+    },
+    "user_quota": {
+        "enabled": false,
+        "max_size_kb": 20971520,
+        "max_objects": -1
+    },
+    "temp_url_keys": []
+}
+```
+> Chú ý: Sử dụng các key sau
+
+> Access key: VJRQ3C2RHWJ1T91BSD5B
+
+> Secret key: APyIJpxRci3ETojXWz4fEIOiJMMMifYftFRK0JUM
+
+__Cấu hình tích hợp Ceph-S3 với Owncloud__
+![](PIC/ceph-lab-luminous-nextcloud-1.PNG)

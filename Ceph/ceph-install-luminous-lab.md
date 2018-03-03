@@ -133,7 +133,7 @@ Tại phân này, ta sẽ cài đặt tât cả các Ceph node thông qua ceph-a
 #### Bước 1: Bổ sung các thư viện tại tất cả các node
 Bổ sung thư viện để tránh lỗi sinh ra không mong muốn
 ```
-yum install python-setuptools
+yum install python-setuptools -y
 yum -y install epel-release
 yum install python-virtualenv -y
 

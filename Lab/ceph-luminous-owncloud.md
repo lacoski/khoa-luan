@@ -184,3 +184,51 @@ __Kiểm tra thông tin user s3 vừa tạo__
 
 __Cấu hình tích hợp Ceph-S3 với Owncloud__
 ![](PIC/ceph-lab-luminous-nextcloud-1.PNG)
+
+## Mở rộng
+
+__Kết nối Luminous với Nextcloud 13__
+
+> Có thể thực hiện tương tự với Nextcloud nhưng phải tạo trước Bucket (Lỗi Nextcloud 13 không thể tạo mới bucket trên Ceph Luminous 3-3-2018)
+
+### Cách tạo mới bucket
+
+__Cài đặt gói__
+```
+yum -y install python-boto
+```
+Tạo python script "/root/cephs3bucket.py"
+```
+[root@ceph-admin ~]# vim cephs3bucket.py
+
+# content
+import boto
+import boto.s3.connection
+
+access_key = 'VJRQ3C2RHWJ1T91BSD5B'
+secret_key = 'APyIJpxRci3ETojXWz4fEIOiJMMMifYftFRK0JUM'
+conn = boto.connect_s3(
+   aws_access_key_id = access_key,
+   aws_secret_access_key = secret_key,
+   host = 'ceph-node-1', port = 7480,is_secure=False, calling_format = boto.s3.connection.OrdinaryCallingFormat(),)
+
+bucket = conn.create_bucket('my-new-bucket')
+for bucket in conn.get_all_buckets():
+   print "{name} {created}".format(name = bucket.name,created = bucket.creation_date,)
+```
+Chạy script
+```
+python /root/cephs3bucket.py
+```
+Kết quả sẽ gần giống
+```
+my-new-bucket 2018-02-27T04:56:33.729Z
+```
+
+Kiểm tra bằng node ceph-admin
+```
+[root@ceph-admin ~]# radosgw-admin bucket list
+[
+    "my-new-bucket",    
+]
+```

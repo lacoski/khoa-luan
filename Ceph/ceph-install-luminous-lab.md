@@ -227,7 +227,7 @@ mon addr = 192.168.2.135
 #### Bước 5: Cài đặt Ceph tới tất cả các node
 Cài đặt Ceph tới tất cả các node từ ceph-admin node.
 ```
-ceph-deploy install ceph-node-2 --repo-url=http://download.ceph.com/rpm-luminous/el7/ --gpg-url=http://download.ceph.com/keys/release.asc
+ceph-deploy install ceph-admin ceph-node-1 ceph-node-2 --repo-url=http://download.ceph.com/rpm-luminous/el7/ --gpg-url=http://download.ceph.com/keys/release.asc
 ```
 > cmd sẽ tự động cài đặt ceph tới tất cả các node: mon1, osd1-2 và ceph-amdin
 

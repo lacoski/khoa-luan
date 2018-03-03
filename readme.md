@@ -71,3 +71,4 @@
 
 ## 8. Lab tổng hợp
 ### [8.1 Kết hợp Ceph Jewel với Nextcloud 13 thông qua Radosgw, S3 interface](Lab/ceph-nextcloud-s3.md)
+### [8.1 Kết hợp Ceph Luminous với Owncloud 10 thông qua Radosgw, S3 interface](Lab/ceph-luminous-owncloud.md)

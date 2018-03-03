@@ -72,3 +72,7 @@ ceph-deploy admin <nodes>
 # Set lại quyền trên các node
 sudo chmod 644 /etc/ceph/ceph.client.admin.keyring
 ```
+### 6. Đẩy cấu hình tới các node
+```
+ceph-deploy --overwrite-conf config push ceph-admin ceph-node-1 ceph-node-2
+```

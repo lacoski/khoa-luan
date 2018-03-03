@@ -16,7 +16,7 @@ __Chuẩn bị 4 node, chạy CentOS 7 với cấu hình__
 
 __Cài đặt Ceph__
 
-[Cài đặt Ceph Jewel trên 3 Node](../Ceph/ceph-3node-lab.md)
+[Cài đặt Ceph Jewel trên 3 Node](../Ceph/ceph-install-jewel-lab.md)
 
 __Cài đặt Nextcloud__
 

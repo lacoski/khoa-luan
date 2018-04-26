@@ -3,10 +3,10 @@
 ## Kế hoạch phần cứng cho Ceph Cluster
 Ceph là software-based storage system, được thiết kế chạy tương thích với các phần cứng chung. Tính năng này của Ceph khiến nó đáp ứng được các yêu cầu về chi phí, tính mở rộng, giải pháp của các nhà cung cấp.
 
-Cluster hardware config yêu cầu phải có kế hoạch khi xây dựng storage. Loại hardware sử dụng cho thiết kế cluster cần được cân nhắc trước khi khởi tạo project. Kế hoạch càng chi tiết giúp cho thiết kế tránh khởi các vấn đề về nghẽn cổ chai, tính bảo đảm của cluster. Chọn phần cứng dự trên sự đa dạng của các nhà cung cấp, túi tiền nhưng các yêu tố phải xem xét cẩn trọng là hiệu năng, sức chứa hoặc cả 2, mức chịu lỗi, các pp xử lý.
+Cluster hardware config yêu cầu phải có kế hoạch khi xây dựng storage. Loại hardware sử dụng cho thiết kế cluster cần được cân nhắc trước khi khởi tạo project. Kế hoạch càng chi tiết giúp cho thiết kế tránh khởi các vấn đề về nghẽn cổ chai, tính bảo đảm của cluster. Chọn phần cứng dựa trên sự đa dạng của các nhà cung cấp, túi tiền nhưng các yếu tố phải xem xét cẩn trọng là hiệu năng, sức chứa hoặc cả 2, mức chịu lỗi, các phương pháp xử lý.
 
 ## Yêu cầu giám sát
-Ceph monitor chịu trách nhiệm theo dõi sức khỏe của toàn cluster bằng các duy trì cluster map. Nó là thuộc 1 phần lưu trữ cluster data. Vì thế nó sẽ không đòi hỏi CPU cũng như Memo, yêu cầu tài nguyên thấp, thiết bị phần cứng cơ bản + vài gb ram là đủ cho monitor node.
+Ceph monitor chịu trách nhiệm theo dõi sức khỏe của toàn cluster bằng các duy trì cluster map. Nó thuộc 1 phần lưu trữ cluster data. Vì thế nó sẽ không đòi hỏi CPU cũng như Memo, yêu cầu tài nguyên thấp, thiết bị phần cứng cơ bản + vài gb ram là đủ cho monitor node.
 
 Có thể tận dụng các tài nguyên server sẵn có để cài Ceph Monitor. (Cài lên server đang chạy dịch vụ khác). Trong môi trường nonproduction, khi đang cân nhắc phần cứng và túi tiền, ta có thể sử dụng Ceph monitor trên máy vật lý cách biệt với các máy ảo.
 
@@ -23,14 +23,15 @@ Ceph OSD yêu cầu:
 + underlying filesystem (XFS, ext4, and Btrfs)
 + separate OSD or cluster redundant network (recommended)
 Cấu hình khuyến cáo: CPU 1 GHz, RAM 2gb/OSD để đáp ứng cho môi trường cluster, và khả năng chịu lỗi của cluster. Tiến trình khôi phục yêu cầu nhiều tài nguyên.
-OSD là đơn vị lưu trữ chính trong Ceph, vị vậy yêu cầu nhiều disk để tăng khả năng lưu trữ, nhưng vấn đề cần quan tầm là tăng memory để tăng hiểu quả sử dụng disk.
+OSD là đơn vị lưu trữ chính trong Ceph, vì vậy yêu cầu nhiều disk để tăng khả năng lưu trữ, nhưng vấn đề cần quan tầm là tăng memory để tăng hiểu quả sử dụng disk.
 
-Từ góc độ hiệu năng, ta cần cân nhắc tắc biệt OSD journal disk trên OSD. Hiệu năng sẽ được cải thiện khi OSD journal được tạo trên SSD disk và OSD data tạo trên Hdd. SSD disk sử dụng như journal sẽ cải thiện hiệu năng cluster và giải quyết các công việc nặng nhanh chóng, hiệu quả. Tuy nhiên sử dụng SSD sẽ gia tăng chi phí. Vì vậy nên thiết kế 1 SSD phục nhiều nhiều OSD disk, nhưng đổi lại, nếu SSD journal disk lỗi, toàn bộ data trên các OSD liên kết sẽ mất => tránh sử dụng quả tải SSD, cơ bản dụng 1 SSD/ 2-4 OSD.
+Từ góc độ hiệu năng, ta cần cân nhắc tách biệt OSD journal disk trên OSD. Hiệu năng sẽ được cải thiện khi OSD journal được tạo trên SSD disk và OSD data tạo trên Hdd. SSD disk sử dụng như journal sẽ cải thiện hiệu năng cluster và giải quyết các công việc nặng nhanh chóng, hiệu quả. Tuy nhiên sử dụng SSD sẽ gia tăng chi phí. Vì vậy nên thiết kế 1 SSD phục nhiều nhiều OSD disk, nhưng đổi lại, nếu SSD journal disk lỗi, toàn bộ data trên các OSD liên kết sẽ mất => tránh sử dụng quả tải SSD, cơ bản dùng 1 SSD/ 2-4 OSD.
 
-Yêu cầu Network
++ Yêu cầu Network
+
 Từ khía cạnh network, ceph yêu cầu cluster cần ít nhất 2 mạng riêng, 1 cho public network (front-side data network) và 1 cho clustered network (backside data network).
 
-2 mạng sẽ tách biệt client data với ceph cluster traffic. Vì hầu như mọi thời điểm, Ceph cluster sẽ sử dụng cluster traffic để thực hiện quá trình nhân bản object, phục hồi trong trường hợp phát sinh lỗi. Nếu sử dụng chung 2 đường có thể sẽ giảm hiệu năng. Tuy nhiên ta có thể sử dụng chung 1 đường vật lý của cả 2 mạng. Về cơ bản, khuyến cáo 1 Gb chô mỗi đường. Tuy nhiên để có hiệu năng tốt nhất  nên sử dụng đường mạng 10 gb (trong trường hợp thiết kế cluster mở rộng trong tương lai, tránh tính trạng nghẽn cổ chai).
+2 mạng sẽ tách biệt client data với ceph cluster traffic. Vì hầu như mọi thời điểm, Ceph cluster sẽ sử dụng cluster traffic để thực hiện quá trình nhân bản object, phục hồi trong trường hợp phát sinh lỗi. Nếu sử dụng chung 2 đường có thể sẽ giảm hiệu năng. Tuy nhiên ta có thể sử dụng chung 1 đường vật lý của cả 2 mạng. Về cơ bản, khuyến cáo 1 Gb cho mỗi đường. Tuy nhiên để có hiệu năng tốt nhất  nên sử dụng đường mạng 10 gb (trong trường hợp thiết kế cluster mở rộng trong tương lai, tránh tính trạng nghẽn cổ chai).
 
 Cần tính toán sự dư thừa cho mỗi tầng mạng như network controller, ports, switches, router. Public network cung cấp các liên kết giữa client – ceph cluster. Mỗi quá hđ I/O giữa client và Ceph cluster sẽ sử dụng kết nối. Cần chắc chắn có đủ băng thông cho client. Với cluster network, Ceph OSD sẽ sử dụng mạng này. Chúng sẽ nhân bản, sử dụng đường truyền, tất cả hoạt động này diễn ra qua cluster network, đồng thời sử dụng cho quá trình tái cân bằng data, khôi phục.
 

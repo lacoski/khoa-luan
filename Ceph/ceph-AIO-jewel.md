@@ -54,7 +54,6 @@ sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
 ```
 
 #### Bước 5: Cấu hình Host File
-Cấu hình trên tất cả các node
 ```
 vim /etc/hosts
 ```
@@ -106,7 +105,7 @@ ssh-keyscan ceph-aio >> ~/.ssh/known_hosts
 
 ### Phần 3: Cấu hình Firewalld
 #### Tùy chọn 1: Cấu hình dựa theo lab
-Trong lab ta sẽ bỏ qua cấu hình firewalld (cấu hình trên tất cả các node)
+Bỏ qua cấu hình firewall
 ```
 systemctl stop firewalld
 systemctl disable firewalld

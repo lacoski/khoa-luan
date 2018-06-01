@@ -154,6 +154,8 @@ fsid = 60643eb6-a568-42ae-b665-114807627e09
 auth_cluster_required = cephx
 auth_service_required = cephx
 auth_client_required = cephx
+osd pool default size = 2
+osd crush chooseleaf type = 0
 
 # Cấu hình Network
 public network = 192.168.2.0/24

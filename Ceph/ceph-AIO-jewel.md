@@ -245,16 +245,15 @@ sr0          11:0    1  4.1G  0 rom
 
 Kiểm tra ceph
 ```
-[root@ceph-aio ~]# ceph -s
-    cluster bad5f60e-804d-404d-a87e-96e9618b888c
-     health HEALTH_WARN
-            too few PGs per OSD (21 < min 30)
+[root@ceph-aio cluster]# ceph -s
+    cluster ca003641-eb38-4a65-8a22-668c2d292212
+     health HEALTH_OK
      monmap e1: 1 mons at {ceph-aio=192.168.2.148:6789/0}
-            election epoch 4, quorum 0 ceph-aio
-     osdmap e23: 3 osds: 3 up, 3 in
+            election epoch 3, quorum 0 ceph-aio
+     osdmap e15: 3 osds: 3 up, 3 in
             flags sortbitwise,require_jewel_osds
-      pgmap v50: 64 pgs, 1 pools, 0 bytes data, 0 objects
-            101548 kB used, 61307 MB / 61406 MB avail
+      pgmap v27: 64 pgs, 1 pools, 0 bytes data, 0 objects
+            100 MB used, 61306 MB / 61406 MB avail
                   64 active+clean
 
 ```

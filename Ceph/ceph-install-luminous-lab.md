@@ -79,7 +79,10 @@
   chmod 0440 /etc/sudoers.d/cephuser
   ```
 #### Bước 3: Cấu hình NTP
+> Thực hiện trên tất cả các NODE
+
 > Cấu hình đồng bộ thời gian bằng NTP
+
 > Sử dụng pool US.
 
 ```
@@ -117,6 +120,7 @@ echo '
 
 ### Phần 2: Cấu hình SSH Server
 > Cấu hình trên node `ceph-admin`
+
 > Sử dụng node `ceph-admin` cài đặt các node còn lại (qua SSH), vì vậy `ceph-admin` cần có khả năng truy cập tới các node còn lại.
 
 #### Bước 1: Tạo ssh-key

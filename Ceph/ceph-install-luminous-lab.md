@@ -282,7 +282,7 @@ __Kết quả__
 
 ![](PIC/ceph-lumi-lab-8-bs.png)
 
-### Phần 6: Kiểm tra Ceph setup
+### Phần 4: Kiểm tra Ceph setup
 #### Kiểm tra tại 1 trong các Ceph monitor node
 Truy cập 1 trong các ceph monitor
 ```

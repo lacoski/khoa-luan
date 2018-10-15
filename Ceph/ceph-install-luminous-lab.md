@@ -277,7 +277,10 @@ ceph-deploy mon create-initial
   ```
   ceph-deploy mgr create ceph-admin:ceph-mgr-1
   ```
-
+- Kiểm tra lại kết quả
+  ```
+  ceph -s
+  ```
 __Kết quả__
 
 ![](PIC/ceph-lumi-lab-8-bs.png)
